@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     const openai = new OpenAIApi(configuration);
     const response = await openai.createImage({
       prompt,
-      n: 2,
+      n: 1,
       size,
     });
     res.status(200).json(response.data.data);
