@@ -58,6 +58,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.heading}>Text to Image</div>
+        <div className={styles.subHeading}>Turn your words into visuals with the Text to Image App!</div>
         <div className={styles.formContainer}>
           <div className={styles.formRow}>
             <label>Describe an Image</label>

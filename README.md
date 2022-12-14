@@ -1,3 +1,4 @@
+### Turn your words into visuals with the Text to Image App!
 ## Description
 
 This app is used to generate image using Open AI 

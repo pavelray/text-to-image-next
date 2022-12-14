@@ -6,10 +6,21 @@
   background-color: #FAF8F1;
 }
 
+.subHeading{
+  font-size: 12px;
+  padding: 5px 0px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
 .heading{
   font-size: 20px;
-  padding: 20px 0px;
+  padding: 20px 0px 0px 0px;
   margin-left: 10px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  font-weight: bold;
 }
 
 .formContainer{
