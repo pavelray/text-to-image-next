@@ -1,15 +1,77 @@
 .container {
-  padding: 0 2rem;
 }
 
 .main {
   min-height: 100vh;
+  background-color: #FAF8F1;
+}
+
+.heading{
+  font-size: 20px;
+  padding: 20px 0px;
+  margin-left: 10px;
+}
+
+.formContainer{
+  height: 40vh;
+  background-color: #FAEAB1;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
+}
+.resultContainer{
+  height: 60vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.formRow{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  text-align: center;
+}
+.formRow label{
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.formRow input{
+  font-size: 20px;
+  width: 350px;
+  height: 30px;
+  margin-top: 10px;
+}
+.formRow select{
+  font-size: 15px;
+  width: 350px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.formRow button{
+  font-size: 15px;
+  width: 200px;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #C58940;
+  border: none;
+  box-shadow: none;
+  color: #FAF8F1;
+  border-radius: 3px;
+}
+.formRow button:hover{
+  cursor: pointer;
+  background-color: #E5BA73;
 }
 
 .footer {
@@ -28,42 +90,8 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
 .grid {
   display: flex;
@@ -106,6 +134,27 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+.loaderHeading{
+  margin: 10px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.loader {
+  width: 120px;
+  height: 120px;
+  border-top: 4px solid rgb(237, 44, 73);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 600px) {
